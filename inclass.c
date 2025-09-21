@@ -1,6 +1,7 @@
+
 #include <stdio.h>
 int main (void){
-printf("Enter number of n+1 integers: \n")
+printf("Enter number of n+1 integers: \n");
 int n;
 scanf("%d", &n);
 int c = 0;
@@ -14,18 +15,19 @@ if (previous == largest)
 second = previous;
 }
 previous = entered;
-printf("Enter an integer: ")
+printf("Enter an integer: ");
 scanf("%d", &entered);
 if(entered > previous && largest == 0)
 {
-largest = entered
+largest = entered;
 }
 if(entered > largest)
 {
-largest = entered
+largest = entered;
 }
-
+c++;
 }
 printf("largest = %d\n", largest);
 printf("2nd largest = %d\n", second);
+
 }
